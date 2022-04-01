@@ -18,12 +18,18 @@ using System.Threading;
 using System.Numerics;
 using System.Security.Cryptography;
 
+
+
+
+
 namespace cookieClicker
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     /// 
+
+
     public class cookieGiver
     {
         public string Name { get; set; }

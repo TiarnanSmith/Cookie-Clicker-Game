@@ -4,20 +4,22 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cookieClicker"
-        mc:Ignorable="d"
-        Title="MOPYClicker" Height="1080" Width="1920">
-    <Grid Height="1080" d:IsLocked="True">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="379*"/>
-            <ColumnDefinition Width="5*"/>
+        mc:Ignorable="d" 
+        SizeToContent="WidthAndHeight"
+        Title="MOPYClicker" Height="1080" Width="1920" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
+    <Grid Height="1080" Width="1920" HorizontalAlignment="Center">
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="1920"/>
+            <ColumnDefinition Width="1080"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="cookieClick" Content="CLICK!" Margin="100,105,1050,585" Click="cookieClick_Click" UseLayoutRounding="False" FontSize="72" d:IsLocked="True"/>
-        <StackPanel x:Name="buyPanel" Margin="1410,49,0,96" Grid.ColumnSpan="2" d:IsLocked="True"/>
-        <Grid HorizontalAlignment="Right" Height="428" Margin="0,511,1050,0" VerticalAlignment="Top" Width="760" d:IsLocked="True">
-            <Label x:Name="TotalCookiesLB" Content="" Margin="0,214,380,0" HorizontalContentAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Top" Width="380" Foreground="Black" FontSize="36" Height="214" d:IsLocked="True"/>
-            <Label x:Name="CPS" Content="" Margin="0,0,380,0" HorizontalContentAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Top" Width="380" Foreground="Black" FontSize="36" Height="209" d:IsLocked="True"/>
-            <Label x:Name="boughtWarn" Content="" Margin="0,214,0,0" HorizontalContentAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Top" Width="380" Foreground="Black" FontSize="36" Height="214" d:IsLocked="True"/>
-            <Label x:Name="Cursors" Content="" Margin="380,0,0,0" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Width="380" Foreground="Black" FontSize="36" Height="214" d:IsLocked="True"/>
+        
+        <Button x:Name="cookieClick" Content="CLICK!" Margin="100,45,1050,645" Click="cookieClick_Click" UseLayoutRounding="False" FontSize="72"/>
+        <StackPanel x:Name="buyPanel" Margin="1215,105,145,40"/>
+        <Grid HorizontalAlignment="Right" Height="428" Margin="0,511,1050,0" VerticalAlignment="Top" Width="760">
+            <Label x:Name="TotalCookiesLB" Content="" Margin="0,214,380,0" HorizontalContentAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Top" Width="380" Foreground="Black" FontSize="36" Height="214"/>
+            <Label x:Name="CPS" Content="" Margin="0,0,380,0" HorizontalContentAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Top" Width="380" Foreground="Black" FontSize="36" Height="209"/>
+            <Label x:Name="boughtWarn" Content="" Margin="0,214,0,0" HorizontalContentAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Top" Width="380" Foreground="Black" FontSize="36" Height="214"/>
+            <Label x:Name="Cursors" Content="" Margin="380,0,0,0" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Width="380" Foreground="Black" FontSize="36" Height="214"/>
 
         </Grid>
 
